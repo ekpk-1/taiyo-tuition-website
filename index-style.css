@@ -62,6 +62,14 @@ p {
     }
 }
 
+@media (max-width: 380px) {
+    .landing-page-nav {
+        display: flex;
+        justify-content: space-between; /* Distribute space evenly between flex items */ /* Align items vertically in the center */
+        margin-right: 0px; /* Adjust the margin between nav items */
+    }
+}
+
 section {
     margin: auto;
     /* may change in future */
