@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onboard me</title>
+    <link rel="stylesheet" href="index-style.css">
+    <link rel="stylesheet" href="navbar-style.css">
+    <link rel="stylesheet" href="footer-style.css">
+		<link rel="stylesheet" href="form-style.css">
+		<script src="form.js"></script>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+		<script type="text/javascript"
+		src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+		</script>
+		<script type="text/javascript">
+		(function(){
+			emailjs.init({
+				publicKey: "UWnvHy_BGQ56HULpU",
+			});
+		})();
+		</script>
+</head>
+<body>
+	<nav>
+		<div class="navbar-container">
+			<div class="navbar">
+					<div class="navbar-logo">
+							<ul>
+									<li>
+											<a class="navbar-item" id="company-name" href="/#landing">TAIYO TUITION</a>
+									</li>
+							</ul>
+					</div>
+					<div class="navbar-items">
+							<ul class="nav-menu">
+									<li class="nav-link">
+											<a class="navbar-item" href="/#landing">HOME</a>
+									</li>
+									<li class="nav-link">
+										<a class="navbar-item" href="/#about-us">ABOUT US</a>
+									</li>
+									<li class="nav-link">
+											<a class="navbar-item" href="/#tutoring">TUTORING</a>
+									</li>
+									<li class="nav-link">
+											<a class="navbar-item" href="/#prices">PRICES</a>
+									</li>
+									<li class="nav-btn">
+											<a class="navbar-item" id="onboard-button" href="/onboard-me.html">ONBOARD ME</a>
+									</li>
+							</ul>
+					</div>
+			</div>
+		</div>
+	</nav>
+
+	<main class="main" id="onboard-me-background">
+
+		<div class="form-container">
+			<div class="form-info">
+				<p class="form-info-items" id="heading">Onboard Me</p>
+				<p class="form-info-items" id="onboard-me-text">Need to get in touch with us? Fill out the form and we'll be in touch shortly.</p>
+			</div>
+		
+			<form class="form-items" id="myForm">
+				<div id="error-message"></div>
+				<div class="form-item" id="form-flex-item">
+					<input 
+						required 
+						id="fullname" 
+						name="fullname" 
+						type="text" 
+						placeholder="Name">
+					<!-- </input> -->
+		
+					<!-- pattern="^04\d{8}$" -->
+					<input 
+						required 
+						id="phone" 
+						name="phone" 
+						type="tel" 
+						placeholder="Mobile">
+					<!-- </input> -->
+				</div>
+		
+				<div class="form-item">
+					<input 
+						required 
+						id="email" 
+						name="email" 
+						type="email" 
+						placeholder="Email">
+					<!-- </input> -->
+				</div>
+		
+				<div class="form-item">
+					<textarea 
+						id="message" 
+						name="message" 
+						placeholder="Message"
+						rows="5"></textarea>
+				</div>
+		
+				<div class="form-item" id="form-submit-item">
+					<div class="g-recaptcha" data-sitekey="6Lf8xW4pAAAAAHO-fWXXn2E2mJ6v2cksg1wQuMwb"></div>
+					<button id="submit-form-button" type="button" onclick="sendMail()">SUBMIT</button>
+					<!-- <button id="submit-form-button" type="submit">Submit</button> -->
+				</div>
+			</form>
+		</div>
+	</main>
+
+
+	<footer>
+		<div class="footer-container">
+				<div class="footer">
+						<div class='footer-items'>
+								<!-- <h1>TAIYO TUITION</h1> -->
+								<img class="company-logo" src="assets/company-logo2.png" alt="taiyo-tuition" />
+						</div>
+						<div class='footer-items'>
+								<ul>
+										<li>
+												<a class="footer-item" href="/#landing">HOME</a>
+										</li>
+										<p class='link-separator'>|</p>
+										<li>
+											<a class="footer-item" href="#about-us">ABOUT US</a>
+										</li>
+										<p class='link-separator'>|</p>
+										<li>
+												<a class="footer-item" href="#tutoring">TUTORING</a>
+										</li>
+										<p class='link-separator'>|</p>
+										<li>
+												<a class="footer-item" href="#prices">PRICES</a>
+										</li>
+										<p class='link-separator'>|</p>
+										<li>
+												<a class="footer-item" href="onboard-me.html">ONBOARD ME</a>
+										</li>
+								</ul>
+						</div>
+						<div class='footer-items' id="icon-links">
+								<ul>
+										<li>
+												<a href='https://www.instagram.com/taiyo_tuition/?hl=en'>
+														<img class='footer-icon' src="assets/instagram.png" alt="instagram" width="42px"/>
+												</a>
+										</li>
+										<li>
+												<a href='https://www.linkedin.com'>
+														<img class='footer-icon' src="assets/linkedin-logo.png" alt="linkedin" width="42px"/>
+												</a>
+										</li>
+								</ul>
+							</div>
+							<div class="footer-items">
+								<p>Copyright &copy; 2024 Taiyo Tuition.</p>
+							</div>
+				</div>
+			</div>
+		</footer>
+
+
+
+	<!-- <script src="https://www.google.com/recaptcha/api.js"></script>
+	<script src="emailjs-com.min.js"></script>
+	<script src="script.js"></script> -->
+</body>
+</html>

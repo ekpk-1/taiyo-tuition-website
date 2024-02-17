@@ -1,0 +1,89 @@
+.company-logo {
+  width: 90px; /* Set the width of the image */
+  height: auto;
+  object-fit: cover; /* Ensure the image covers the entire container */
+  object-position: center; /* Position the image at the center */
+  border-radius: 8px;
+}
+.footer-container {
+    background-color: #fff;
+    color: #333;
+    padding: 20px 0;
+  }
+  
+.footer {
+  display: flex;
+  flex-direction: column; /* Display items in a column */
+  align-items: center; /* Center items horizontally */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-items {
+  margin-bottom: 20px; /* Adjust the spacing between rows */
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+}
+
+.footer-items ul {
+  list-style: none;
+  padding: 0;
+  display: flex; /* Display items in a row */
+}
+
+.footer-items li {
+  margin: 0 10px; /* Adjust the spacing between items */
+}
+
+.footer-link {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Style the social media links */
+.footer-items a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Add styling for the social media links on hover if desired */
+.footer-items a:hover {
+  text-decoration: underline;
+}
+
+.link-separator {
+  color: #c1c1c1;
+}
+
+.footer-icon {
+  font-size: 50px;
+}
+
+
+@media (max-width: 768px) {
+  .footer-items {
+    flex-direction: column; /* Change direction to column for smaller screens */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .footer-items ul {
+    flex-direction: column; /* Change direction to column for smaller screens */
+    text-align: center; /* Center items horizontally within the column */
+  }
+
+  .footer-items li {
+    margin: 10px 0; /* Adjust the spacing between items vertically */
+  }
+  .link-separator {
+    display: none;
+  }
+
+    /* Adjust the styling to keep the icons in a row */
+  .footer-items ul li .footer-icon {
+    margin-right: 10px; /* Adjust the spacing between icons horizontally */
+  }
+
+  #icon-links ul{
+    flex-direction: row;
+  }
+}
