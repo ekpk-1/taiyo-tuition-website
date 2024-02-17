@@ -115,6 +115,9 @@ input::placeholder, textarea::placeholder {
     body {
         overflow-x: hidden;
     }
+    #onboard-me-background {
+        padding-bottom: 64px;
+    }
     .form-items {
         width: 100%;
         padding: 20px;
