@@ -1,4 +1,11 @@
 $(document).ready(function(){
+  $('.reviews-items').slick({
+    dots: false,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+  });
   $('.tutoring-items').slick({
     dots: false,
     infinite: false,
