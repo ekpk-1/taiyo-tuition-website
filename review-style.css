@@ -24,7 +24,7 @@
 
 .reviews-item {
     /* flex: 0 0 calc(30% - 20px); 30% width for each column with spacing */
-    background-color: green;
+    background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;

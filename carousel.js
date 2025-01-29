@@ -1,10 +1,28 @@
 $(document).ready(function(){
   $('.reviews-items').slick({
-    dots: false,
+    dots: true,
     infinite: false,
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
   $('.tutoring-items').slick({
     dots: false,
