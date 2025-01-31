@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="footer-style.css">
 		<link rel="stylesheet" href="about-us-style.css">
 		<link rel="stylesheet" href="review-style.css">
+		<link rel="stylesheet" href="button-hover.css">
 		<link rel="icon" href="assets/favicon-16x16.png" type="image/png">
 
 		<!-- embed for font -->
@@ -102,8 +103,14 @@
 							</div>
 							<div class="landing-page-item" id="landing-page-item-bottom">
 									<ul class="landing-page-list">
-											<li>
-													<a class="landing-page-nav" id="contact-us-button" href="https://pdu2aawxpdr.typeform.com/to/o6rQPFyz">FREE TRIAL</a>
+											<li>	
+												<div id="cursor-container">
+													<div id="cursor">
+														<pre class="cursor-text" id="count">0</pre>
+														<p class="cursor-text">ATAR AWAITS!</p>
+													</div>
+												</div>
+													<a class="landing-page-nav" id="contact-us-button" onmouseenter="cursor.hidden = false" onmouseleave="cursor.hidden = true" href="https://pdu2aawxpdr.typeform.com/to/o6rQPFyz">FREE TRIAL</a>
 													<!-- <a class="landing-page-nav" id="contact-us-button" href="/onboard-me.html">ONBOARD ME</a> -->
 											</li>
 											<li>
@@ -127,7 +134,7 @@
 					<div class="about-us-info" id="our-team">
 						<h1>Our Team</h1>
 						<p class="about-us-text">
-							The Taiyo Tuition team is a vibrant assembly of Australia's finest private tutors, ranked in Australia’s Top 5% of tutors. Each tutor is dedicated to nurturing students' academic journeys from Years 1-12. Our educators, renowned for their expertise and empathy, personalise learning experiences to unlock every student's potential. They are more than just tutors; they are mentors committed to inspiring confidence and academic success. At Taiyo Tuition, we pride ourselves on creating an environment where students are empowered to achieve excellence through tailored guidance and support.
+							The Taiyo Tuition team is a vibrant assembly of Australia's finest private tutors, ranked in Australia's Top 5% of tutors. Each tutor is dedicated to nurturing students' academic journeys from Years 1-12. Our educators, renowned for their expertise and empathy, personalise learning experiences to unlock every student's potential. They are more than just tutors; they are mentors committed to inspiring confidence and academic success. At Taiyo Tuition, we pride ourselves on creating an environment where students are empowered to achieve excellence through tailored guidance and support.
 						</p>
 					</div>
 				</div>
@@ -135,14 +142,13 @@
 					<div class="about-us-info" id="our-aim">
 						<h1>Our Aim</h1>
 						<p class="about-us-text">
-							Our purpose at Taiyo Tuition is straightforward: to empower every student to achieve their full personal potential and excel beyond their expectations. We strive to provide an educational experience that is not only enriching but also transformative, enabling students from Years 1-12 to master their studies, develop a lifelong love for learning, and confidently navigate their academic paths. Through personalised tutoring and meticulously designed online courses, we focus on unlocking each student’s unique abilities and fostering an environment where academic challenges are met with enthusiasm and resilience. Our commitment is to guide our students towards academic excellence, instilling in them the skills, confidence, and determination to succeed in all their educational endeavors.
+							Our purpose at Taiyo Tuition is straightforward: to empower every student to achieve their full personal potential and excel beyond their expectations. We strive to provide an educational experience that is not only enriching but also transformative, enabling students from Years 1-12 to master their studies, develop a lifelong love for learning, and confidently navigate their academic paths. Through personalised tutoring and meticulously designed online courses, we focus on unlocking each student's unique abilities and fostering an environment where academic challenges are met with enthusiasm and resilience. Our commitment is to guide our students towards academic excellence, instilling in them the skills, confidence, and determination to succeed in all their educational endeavors.
 						</p>
 					</div>
 					<img class="about-us-img" src="assets/teaching-team3.JPG" alt="Taiyo's Aim">
 				</div>
 			</div>
 		</section>
-
 		<!-- Reviews -->
 		<section class="section-with-margin" id="reviews">
 			<div>
@@ -176,7 +182,6 @@
 			</div>
 		</section>
 		<!-- TUTORING PAGE -->
-		<!-- add heading for tutoring -->
 		<section class="section-with-margin" id="tutoring">
 			<div>
 				<div>
@@ -198,10 +203,10 @@
 											The foundational years set the stage for a lifetime of learning. At Taiyo Tuition, we ensure to carefully select and train our primary school tutors to especially cater to young learners, instilling in them a passion for knowledge that lasts a lifetime. 
 										</p>
 										<p>
-											No matter if your child faces challenges in their studies or is seeking more rigorous enrichment, our tutors are equipped to make an actual difference. We turn learning into an engaging and enjoyable experience, it is such a crucial stage for a child’s learning. Many parents have shared with us how their children look forward to their tutoring sessions, often wishing their Taiyo tutor could visit every day!
+											No matter if your child faces challenges in their studies or is seeking more rigorous enrichment, our tutors are equipped to make an actual difference. We turn learning into an engaging and enjoyable experience, it is such a crucial stage for a child's learning. Many parents have shared with us how their children look forward to their tutoring sessions, often wishing their Taiyo tutor could visit every day!
 										</p>
 										<p>
-											We provide comprehensive tutoring across all primary school grades and subjects, ensuring our approach is in accordance with Melbourne’s and Sydney’s curriculum standards. Whether it’s reinforcing foundational skills or pushing the boundaries of academic excellence, Taiyo Tuition is here to support your child’s educational journey.
+											We provide comprehensive tutoring across all primary school grades and subjects, ensuring our approach is in accordance with Melbourne's and Sydney's curriculum standards. Whether it's reinforcing foundational skills or pushing the boundaries of academic excellence, Taiyo Tuition is here to support your child's educational journey.
 										</p> -->
 								</div>
 								<div class="tutoring-service-list">
@@ -214,7 +219,7 @@
 											For our senior students, the guidance of a Year 11 or Year 12 tutor is irreplaceable. They bring a wealth of academic insight and serve as a robust support network, navigating students through the pressures of their concluding high school years.
 										</p>
 										<p>
-											Taiyo Tuition covers all subjects for high school students up to Year 12, accommodating both Melbourne’s and Sydney’s state curriculum. Our tutors are not just educators; they are pillars of support, dedicated to empowering students throughout their high school journey and preparing them for University.
+											Taiyo Tuition covers all subjects for high school students up to Year 12, accommodating both Melbourne's and Sydney's state curriculum. Our tutors are not just educators; they are pillars of support, dedicated to empowering students throughout their high school journey and preparing them for University.
 										</p> -->
 								</div>
 								<div class="tutoring-service-list">
@@ -231,6 +236,7 @@
 				</div>		
 			</div>
 		</section>
+		<!-- PRICING PAGE -->
 		<section class="section-with-margin" id="prices">
 			<div>
 				<div>
@@ -359,11 +365,16 @@
 							</div>
 				</div>
 			</div>
-		</footer>
+	</footer>
 
 
-
+		<script type="module">
+			import { animate, scroll } from "https://cdn.jsdelivr.net/npm/motion@latest/+esm"
+			window.animate = animate; // Make animate available globally
+		</script>
+		<script src="button-animation.js" type="module"></script>
 		<script src="navbar.js"></script>
+		<script src="button-hover.js"></script>
 		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
