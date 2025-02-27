@@ -122,6 +122,7 @@ section {
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
+    gap: 20px;
 }
 
 .landing-page-items {
@@ -165,6 +166,7 @@ display: flex;
 list-style: none; /* Remove default list styling */
 padding: 0; /* Remove default padding */
 }
+
 .landing-page-img {
 width: 100%;
 max-width: 450px;
